@@ -1,8 +1,8 @@
 
-from Final.model.database import DatabaseEngine
-from Final.controller.member_controller import MemberController
-from Final.vue.admin_vue import AdminVue
-from Final.exceptions import Error
+from model.database import DatabaseEngine
+from controller.member_controller import MemberController
+from vue.admin_vue import AdminVue
+import exceptions
 
 
 def main():
@@ -17,7 +17,7 @@ def main():
     try:
         member = admin_vue.add_member("customer")
         admin_vue.show_member(member)
-    except Error as e:
+    except exceptions.Error as e:
         admin_vue.error_message(str(e))
 
 

@@ -1,7 +1,7 @@
 import re
 
-from Final.model.dao.member_dao import MemberDAO
-from Final.exceptions import Error, InvalidData
+from model.dao.member_dao import MemberDAO
+from exceptions import Error, InvalidData
 
 
 class MemberController:
